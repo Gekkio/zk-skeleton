@@ -1,7 +1,7 @@
-import fi.jawsy.sbtplugins.jrebel.JRebelProject
+import fi.jawsy.sbtplugins.jrebel.JRebelWebPlugin
 import sbt._
 
-class ZKSkeleton(info: ProjectInfo) extends DefaultWebProject(info) with JRebelProject {
+class ZKSkeleton(info: ProjectInfo) extends DefaultWebProject(info) with JRebelWebPlugin {
 
   object Versions {
     val geronimoServlet = "1.2"
