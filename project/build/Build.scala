@@ -19,6 +19,9 @@ class ZKSkeleton(info: ProjectInfo) extends DefaultWebProject(info) with JRebelW
   val jettyWebapp = "org.eclipse.jetty" % "jetty-webapp" % Versions.jetty % "test"
   val localMaven = "Local Maven Repository" at "file://" + Path.userHome + "/.m2/repository"
 
+  val zkConfig = ModuleConfiguration("org.zkoss.zk", zkRepo)
+  def zkRepo = "m2-zk" at "http://mavensync.zkoss.org/maven2"
+
   override def jettyContextPath = "/zkskeleton"
   override def jettyRunClasspath = super.jettyRunClasspath +++ ("lib_local") +++ ("lib_local" ** "*.jar")
   override def compileClasspath = super.compileClasspath --- (managedDependencyRootPath ** ("*-sources.jar" | "*-javadoc.jar"))
