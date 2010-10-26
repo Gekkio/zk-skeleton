@@ -5,7 +5,7 @@ class ZKSkeleton(info: ProjectInfo) extends DefaultWebProject(info) with JRebelW
 
   object Versions {
     val geronimoServlet = "1.2"
-    val jetty = "7.0.1.v20091125"
+    val jetty = "7.0.2.v20100331"
     val zk = "5.0.1"
   }
 
