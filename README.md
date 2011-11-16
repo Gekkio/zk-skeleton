@@ -11,6 +11,12 @@ Usage
 
 2. Run SBT.
 
-        sbt update jetty
+Manually:
+
+        sbt container:start ~compile:products container:stop
+
+Linux launcher:
+
+        ./go.sh
 
 3. Go to [http://localhost:8080/zkskeleton](http://localhost:8080/zkskeleton)
