@@ -13,11 +13,10 @@ scalaVersion := "2.9.1"
 libraryDependencies ++= {
   val javaxServlet = "3.0.1"
   val jetty = "8.0.4.v20111024"
-  val zk = "5.0.9"
+  val zk = "6.5.0"
   Seq(
     "javax.servlet" % "javax.servlet-api" % javaxServlet,
     "org.eclipse.jetty" % "jetty-webapp" % jetty % "container",
-    "org.zkoss.theme" % "breeze" % zk,
     "org.zkoss.common" % "zcommon" % zk,
     "org.zkoss.common" % "zweb" % zk,
     "org.zkoss.zk" % "zk" % zk,
